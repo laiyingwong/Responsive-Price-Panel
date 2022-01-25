@@ -1,0 +1,249 @@
+/* following code is meant to remove all the default CSS properties; actual project code starts at line 132 */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ************* Responsive-Price-Panel ************* */
+/* *** The price panel will have all 3 price sections aligned in a column direction when the width of the viewport is within 700px */
+
+/* ---------- Styling Background & Typography ---------- */
+/* center the price panel on the webpage */
+
+body {
+  background-color: #60a9ff;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  padding: 25px 0;
+}
+
+/* make the price panel a flex container and align all items in a column direction; style the panel with extra paddings and rounded corner */
+.panel {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* for each item:
+  1) uppercase and center the text
+  2) add appropriate margins and paddings
+  3) style the header and anchor tags
+  4) add borders to delineate different sections (exclude the last one)
+  5) add borders to the buttons
+*/
+
+.pricing-img {
+  /* make the image width relative to its parent element to avoid overflow */
+  max-width: 100%;
+}
+
+.pricing-header {
+  color: #888;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 0 50px;
+}
+
+.pricing-plan {
+  color: #016ff9;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px solid #e1f1ff;
+  padding: 0 60px;
+}
+
+.pricing-plan:last-child {
+  border-bottom: none;
+}
+
+.pricing-features-item {
+  border-top: 1px solid #e1f1ff;
+  padding: 15px 0;
+}
+
+.pricing-features-item:last-child {
+  border-bottom: 1px solid #e1f1ff;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+
+.pricing-price {
+  font-size: 40px;
+  font-weight: 700;
+  display: block;
+}
+.pricing-button {
+  display: inline-block;
+  margin: 30px 30px;
+  color: #348efe;
+  border: 1px solid #9dd1ff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.pricing-button:hover,
+.pricing-button:focus {
+  background-color: #e1f1ff;
+}
+
+.pricing-button.is-featured {
+  color: white;
+  background-color: #48aaff;
+}
+
+.pricing-button.is-featured:hover,
+.pricing-button.is-featured:focus {
+  background-color: #269aff;
+}
+
+/* *** The price panel will have all 3 price sections aligned in a row direction when the width of the viewport exceeds 700px */
+
+/* When the viewport reaches at least 700px wide, the price panel will be laid out in a row format, and the bottom borders will be replaced by the right borders (exclude the right most section). */
+
+@media (min-width: 700px) {
+  .panel {
+    flex-direction: row;
+  }
+  .pricing-plan {
+    border-right: 1px solid #e1f1ff;
+    border-bottom: none;
+  }
+  .pricing-plan:last-child {
+    border-right: none;
+  }
+}

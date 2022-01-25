@@ -1,0 +1,33 @@
+body {
+  background-color: #60a9ff;
+}
+
+.pricing-header {
+  color: #888;
+}
+
+.pricing-features-item {
+  color: #016ff9;
+  border-color: #e1f1ff;
+}
+
+.pricing-price {
+  color: #016ff9;
+}
+
+.pricing-button {
+  color: #348efe;
+  border-color: #9dd1ff;
+}
+
+.pricing-button:hover {
+  background-color: #e1f1ff;
+}
+
+.pricing-button.is-featured {
+  background-color: #48aaff;
+}
+
+.pricing-button.is-featured:hover {
+  background-color: #269aff;
+}

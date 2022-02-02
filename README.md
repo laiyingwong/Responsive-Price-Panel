@@ -15,7 +15,7 @@ Coded from scratch on the CSS file to reinforce my CSS and Flexbox knowledge and
 
 ## 👏 Credits
 
-This project is based on the Flexbox tutorial on Udemy by Colt Steele. 
+This project is based on the Flexbox tutorial on Udemy by <a href="https://www.udemy.com/user/coltsteele/">Colt Steele</a>. 
 
-The design is inspired by a CodePen by Travis Williamson.
+The design is inspired by a CodePen by <a href="https://codepen.io/travisw">Travis Williamson</a>.
 

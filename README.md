@@ -9,7 +9,7 @@ The price panel is responsive on desktop and mobile screens. At a desktop view, 
 
 ## ✨ Motivation 
 
-Coded from scratch on the CSS file to reinforce my CSS and Flexbox knowledge and practice building a responsive website with media query. The project starter looks like this:
+I coded from scratch on the CSS file to reinforce my CSS and Flexbox knowledge and practiced building a responsive website with media query. The project starter looks like this:
 
 ![starter](Assets/starter.png)
 

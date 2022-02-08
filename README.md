@@ -15,7 +15,7 @@ I coded from scratch on the CSS file to reinforce my CSS and Flexbox knowledge a
 
 ## 👏 Credits
 
-This project is based on the Flexbox tutorial in <a href="https://www.udemy.com/course/the-web-developer-bootcamp/">The Web Developer Bootcamp</a> by Colt Steele. 
+This project is based on a Flexbox tutorial of <a href="https://www.udemy.com/course/the-web-developer-bootcamp/">The Web Developer Bootcamp</a> by Colt Steele. 
 
 The design is inspired by a CodePen by <a href="https://codepen.io/travisw">Travis Williamson</a>.
 
